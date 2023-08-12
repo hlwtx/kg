@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html>
+
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+ <script>
+    
+    var pageHeight = 0;
+    
+    var logCount={
+      
+      fTime : new Date().valueOf(),
+      
+      business : 12,
+      
+      BIbusiness : 30035,
+      
+      played : false, // 是否已开始播放
+      
+    };
+	
+ </script>
+     
+     <title>Hello_wtx</title>
+    
+  <script>
+    
+    window.onresize = function () {
+      
+      var html = document.querySelector("html");
+      
+      var rem = html.offsetWidth / 7.2;
+      
+      html.style.fontSize = rem + "px";
+    
+    }
+    
+    window.onresize()
+ 
+  </script>
+  
+	<script>
+	
+  var phpParam = {"h2":"6da0ceae3676681b55c2439aae6b0cef","us":"MTE1NjU2OTA1Mw==","issoft":"1","hash":"6a120d3cd881f8cf3ce4a38a56e44b78","sruserid":"1156569053","p_speed":"1.0","album_audio_id":"251721168","action":"single","timelen":"240000","p_viper_dj":"0","u":"1156569053","sharetime":"1691650370","kgsscty1":"link","h1":"154376896098391504121405852753600895718","usm":"a99e199f3615091340e53d45558085f3","MicroBlog":"2","album_id":"9618875","filename":"%u5f20%u7d2b%u8c6a - %u53ef%u4e0d%u53ef%u4ee5","chl":"link","song_info":{"data":{"authors":[{"birthday":"1997-06-22","is_publish":1,"author_name":"\u5f20\u7d2b\u8c6a","author_id":789204,"language":"\u534e\u8bed","identity":7,"country":"\u4e2d\u56fd","avatar":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20190408\/20190408121603762313.jpg","type":1}],"hash":"6A120D3CD881F8CF3CE4A38A56E44B78","author_name":"\u5f20\u7d2b\u8c6a","status":1,"audio_id":37922503,"ctype":1009,"choricSinger":"\u5f20\u7d2b\u8c6a","fileHead":100,"fail_process":0,"fileSize":3855453,"bitRate":128,"voice_ad":0,"audition_status":0,"mvhash":"","fileName":"\u5f20\u7d2b\u8c6a - \u53ef\u4e0d\u53ef\u4ee5","intro":"","highprivilege":10,"topic_url":"","store_type":"audio","songName":"\u53ef\u4e0d\u53ef\u4ee5","pay_type":0,"req_hash":"6A120D3CD881F8CF3CE4A38A56E44B78","old_cpy":0,"singerHead":"","time":1691650393,"area_code":"1","singerName":"\u5f20\u7d2b\u8c6a","req_albumid":"9618875","album_category":1,"topic_remark":"","albumid":9618875,"sqprivilege":10,"publish_self_flag":0,"url":"http://music.163.com/song/media/outer/url?id=553755659.mp3","extra":{"320hash":"9674EBB4A10B7613D9C78F50385584D8","128timelength":240927,"sqfilesize":27510935,"sqhash":"CEB75303E35EC1EBBAF1DD7D07894CA3","320timelength":240000,"sqtimelength":240889,"sqbitrate":913,"highhash":"59B92D9AF66BCCF97F5460CE00DEB259","128bitrate":128,"hightimelength":240889,"320filesize":9638336,"highfilesize":27433586,"highbitrate":910,"128hash":"6A120D3CD881F8CF3CE4A38A56E44B78","128filesize":3855453},"stype":11323,"trans_param":{"cpy_grade":5,"classmap":{"attr0":234881032},"language":"\u56fd\u8bed","qualitymap":{"attr0":4178036},"cid":33159408,"display_rate":0,"cpy_attr0":16384,"hash_multitrack":"75567D52702C5DE54EB6137747CF853D","pay_block_tpl":1,"musicpack_advance":0,"display":0,"cpy_level":1},"128privilege":8},"status":1,"error":""},"share_subtype":0};
+  
+  var dataForWeixin = {};
+
+	</script>
+   
+	<link rel="stylesheet" href="https://m3ws.kugou.com/static/css/share/index_single_v2.css?v7">
+	
+	<div class="mod_play_box" id="commentType">
+				
+    <div class="play_info">
+				
+    	<div class="play_info_fix">
+					
+     	<h1 class="play_song" id="play_song_w" >
+							
+       <span id="play_song" class="nowrap1">可不可以</span>
+							
+       <em id="selfpublish" class="selfpublish"></em>
+					
+     	</h1>
+						
+      <div class="play_singer nowrap1" id="play_singer">张紫豪</div>
+				
+    	</div>
+            
+        <div class="singer_cover" id="play_main">
+				
+    	<div class="pic_con">
+				
+        <img src="https://s1.ax1x.com/2023/08/10/pPmkKnH.jpg" id="singer_cover_bg" class="singer_cover_bg" alt="张紫豪 - 可不可以"></img>
+        
+    	<div class="ring"></div>
+					
+     </div>
+         			 
+        <span class="playorpause"></span>
+				
+    </div>
+			
+   <div class="mod_lrc" id="mod_lrc">
+			
+   	<div class="lyr_box" id="lyr_box"></div>
+
+<div id="player" style="display:none;">
+   
+    <audio id="kugou" height="0" width="0" loop></audio>
+
+</div>
+
+<script type="text/javascript" src="https://m3ws.kugou.com/static/js/share/base-min.js"></script>
+
+<script src="https://staticssl.kugou.com/common/js/min/inf_public-min.js"></script>
+
+<script charset="utf-8" type="text/javascript">
+
+var _chl = {};
+
+</script>
+
+<script type="text/javascript" src="https://staticssl.kugou.com/common/js/min/login/kguser.v2.min.js?v=20191021"></script>
+
+<script src="https://staticssl.kugou.com/common/js/min/npm/share.min.1.0.30.js"></script>
+
+<script src="https://m3ws.kugou.com/static/js/share/npm/lyric-2.2.3.min.js"></script>
+
+<script type="text/javascript" src="https://m3ws.kugou.com/static/js/common/ua-parser-js.min.js"></script>
+
+<script type="text/javascript" src="https://m3ws.kugou.com/static/js/share/index_single_v2.min.js?v14"></script>
+
+ <style>
+
+.go-top {
+    position: fixed;	        /* 设置fixed固定定位 */
+    bottom: 100px;		/* 距离浏览器窗口下边框20px */
+    right: 110px;		/* 距离浏览器窗口右边框20px */
+  }
+  .go-top a {
+    display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    text-decoration: none;		/* 取消超链接下画线 */
+    color: white;			/* 设置文本颜色 */
+    border: 1px solid #ccc;		/* 设置边框样式 */
+    padding: 10px 50px;			/* 设置内边距 */
+    border-radius: 360px;			/* 设置圆角矩形 */
+    letter-spacing: 2px;		/* 设置文字间距 */
+  }
+  
+  </style>
+  
+  <div class="go-top">
+  
+  <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=BOp2wG1iPZ6qJ6r1vMzWA_67x8zVhuFZ&authKey">添加<br>群聊</a>
+ 
+  </div>
+  
+  <style>
+
+body{
+ 
+  background-image:url("https://s1.ax1x.com/2023/08/10/pPm381J.jpg");background-size:110% auto;">
+
+}
+
+</style>
+
+</body>
+
+</html>
