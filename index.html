@@ -143,23 +143,6 @@ body{
   <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=BOp2wG1iPZ6qJ6r1vMzWA_67x8zVhuFZ&authKey">添加<br>群聊</a>
  
   </div>  
-<script type="text/javascript">
-var tx=new Array("哈喽你好","我是忘同学","感谢你陪我走过这一程");
-var txcount=4;
-var i=1;
-var wo=0;
-var ud=1;
-function animatetitle()
-{
-window.document.title=tx[wo].substr(0,i)+"";
-if(ud==0)i--;
-if(ud==1)i++;
-if(i==-1){ud=1;i=0;wo++;wo=wo%txcount;}
-if(i==tx[wo].length+10){ud=0;i=tx[wo].length;}
-parent.window.document.title=tx[wo].substr(0,i)+"";
-setTimeout("animatetitle()",100);
-}
-animatetitle();
-</script>
+	   
 </body>
 </html>
